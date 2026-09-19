@@ -1,4 +1,28 @@
- <!-- Main Footer -->
+<!-- Footer Fixed-to-Bottom Fix -->
+<style>
+    body.layout-fixed .main-footer {
+        position: fixed;
+        bottom: 0;
+        left: 250px;
+        right: 0;
+        margin-left: 0 !important;
+        z-index: 1030;
+        background: #fff;
+        transition: left .3s ease-in-out;
+    }
+
+    /* Adjust when sidebar is collapsed (AdminLTE mini-sidebar width) */
+    body.layout-fixed.sidebar-collapse .main-footer {
+        left: 4.6rem;
+    }
+
+    /* Prevent page content from being hidden behind the fixed footer */
+    body.layout-fixed .content-wrapper {
+        padding-bottom: 60px;
+    }
+</style>
+
+<!-- Main Footer -->
     <footer class="main-footer">
 
         <strong>
