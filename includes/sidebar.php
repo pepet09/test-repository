@@ -35,35 +35,8 @@
     <!-- Sidebar Navigation Contents -->
     <div class="sidebar">
 
-        <!-- User Panel Section -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex align-items-center">
-
-            <div class="image">
-
-                <i class="fas fa-user-circle fa-2x text-white-50"></i>
-
-            </div>
-
-            <div class="info ml-2">
-
-                <a href="#" class="d-block font-weight-bold" style="line-height: 1.2; margin-bottom: 2px;">
-
-                    <?= htmlspecialchars($_SESSION['fullname']); ?>
-
-                </a>
-
-                <span class="badge badge-light text-capitalize" style="font-size: 11px; padding: 2px 6px; font-weight: 600; color: #343a40;">
-
-                    <?= htmlspecialchars($_SESSION['role']); ?>
-
-                </span>
-
-            </div>
-
-        </div>
-
         <!-- Sidebar Menu Navigation tree -->
-        <nav class="mt-2">
+        <nav class="mt-4">
 
             <ul class="nav nav-pills nav-sidebar flex-column"
                 data-widget="treeview"
@@ -167,29 +140,6 @@
                         <i class="nav-icon fas fa-chart-bar"></i>
 
                         <p>Analytics</p>
-
-                    </a>
-
-                </li>
-
-                <!-- Section Divider Flag -->
-                <li class="nav-header">
-
-                    ACCOUNT
-
-                </li>
-
-                <!-- Logout Session Termination Link -->
-                <li class="nav-item">
-
-                    <a href="/proposed_dpwh_repository/logout.php"
-                       class="nav-link text-danger">
-
-                        <i class="nav-icon fas fa-sign-out-alt"></i>
-
-                        <p>
-                            Logout
-                        </p>
 
                     </a>
 

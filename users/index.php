@@ -48,7 +48,9 @@ $query = mysqli_query($conn, "SELECT id, username, fullname, role FROM users ORD
                                     <td><?= htmlspecialchars($row['username']); ?></td>
                                     <td>
                                         <?php 
-                                        if ($row['role'] === 'Chief') {
+                                        if ($row['role'] === 'Administrator') {
+                                            echo '<span class="badge badge-dark">Administrator</span>';
+                                        } elseif ($row['role'] === 'Chief') {
                                             echo '<span class="badge badge-danger">Chief Engineer</span>';
                                         } elseif ($row['role'] === 'Materials Engineer') {
                                             echo '<span class="badge badge-primary">Materials Engineer</span>';
